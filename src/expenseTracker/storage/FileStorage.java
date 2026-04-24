@@ -10,7 +10,7 @@ public class FileStorage {
 
     public void saveExpense(Expense expense) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
-            writer.write(Expense.toFileString());
+            writer.write(expense.toFileString());
             writer.newLine();
         } catch (IOException e) {
             System.out.println("Error saving expense: " + e.getMessage());

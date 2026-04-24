@@ -10,7 +10,7 @@ package expenseTracker.model;
             this.date = date;
         }
 
-        public static String toFileString() {
+        public  String toFileString() {
             return category + "," + amount + "," + date;
         }
 
