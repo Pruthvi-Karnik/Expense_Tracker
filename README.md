@@ -1,88 +1,75 @@
-# Library Management System (Java)
+# 💰 Expense Tracker (Java)
 
-## Overview
-
-This project is a console-based Library Management System built using Java. It simulates basic library operations such as user registration, login authentication, and role-based access for admin and regular users.
+A simple and modular **expense tracking application** built using Java.
+This project helps users record, manage, and analyze their daily expenses using file-based storage.
 
 ---
 
-## Features
+## 🚀 Features
 
-### Authentication System
+* Add new expenses with category, amount, and date
+* View all recorded expenses
+* Calculate total spending
+* View category-wise spending insights
+* Persistent storage using file handling
 
-* User Registration
-* Login validation using username and password
-* Duplicate username prevention
+---
 
-### User Roles
+## 🧱 Project Structure
 
-* Admin
-* Regular User
+```
+expense-tracker/
+│
+├── model/        # Data models (Expense class)
+├── service/      # Business logic (ExpenseService)
+├── storage/      # File handling (FileStorage)
+├── util/         # Utility classes (Input handling)
+└── main/         # Entry point (MainApp)
+```
 
-### Core Concepts Used
+---
+
+## 🧠 Concepts Used
 
 * Object-Oriented Programming (OOP)
-* Inheritance (Admin & RegularUser classes)
-* Encapsulation (password protection using methods)
-* ArrayList as in-memory database
+* File Handling in Java
+* Modular design (separation of concerns)
+* Collections (List, Map)
+* Basic data processing and aggregation
 
 ---
 
-## Project Structure
-
-```
-libraryManagementSystem/
- ├── main.java
- ├── database/
- │    ├── users.java
- │    ├── admin.java
- │    ├── regularUser.java
-```
-
----
-
-## How It Works
-
-1. User selects:
-
-   * Login or Register
-2. Registration:
-
-   * Stores user data in an ArrayList
-3. Login:
-
-   * Searches user in ArrayList
-   * Verifies password using method
-4. Role-based access:
-
-   * Admin or User identified after login
-
----
-
-## Limitations
-
-* No database (data resets after program ends)
-* No GUI (console-based)
-* No persistent storage
-
----
-
-## Future Improvements
-
-* Add file/database storage (MySQL / File Handling)
-* Implement book management (issue/return system)
-* Add GUI (JavaFX / Swing)
-* Password encryption
-
----
-
-## Technologies Used
+## 🛠️ Tech Stack
 
 * Java
-* IntelliJ IDEA
+* File I/O (BufferedReader, BufferedWriter)
 
 ---
 
-## Author
+## ▶️ How to Run
 
-Pruthvi Karnik
+1. Clone the repository
+2. Open the project in IntelliJ IDEA (or any Java IDE)
+3. Run `MainApp.java`
+
+---
+
+## 📌 Future Improvements
+
+* Add database integration (MySQL)
+* Build a GUI or web interface
+* Add budget alerts and notifications
+* Export reports (CSV/PDF)
+
+---
+
+## 👤 Author
+
+**Pruthvi Karnik**
+GitHub: https://github.com/Pruthvi-Karnik
+
+---
+
+## 📄 License
+
+This project is for educational purposes.
