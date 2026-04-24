@@ -12,6 +12,8 @@ public class InputUtil {
 
     public static double getDouble(String message) {
         System.out.print(message);
-        return scanner.nextDouble();
+        double value = scanner.nextDouble();
+        scanner.nextLine();
+        return value;
     }
 }

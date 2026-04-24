@@ -23,7 +23,10 @@ public class FileStorage {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                expenses.add(Expense.fromFileString(line));
+                Expense expense = Expense.fromFileString(line);
+                if (expense != null) {
+                    expenses.add(expense);
+                }
             }
         } catch (IOException e) {
             System.out.println("No existing data found.");

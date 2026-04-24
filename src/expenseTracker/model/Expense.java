@@ -16,6 +16,12 @@ package expenseTracker.model;
 
         public static Expense fromFileString(String line) {
             String[] parts = line.split(",");
+
+            if (parts.length < 3) {
+                System.out.println("Skipping invalid data: " + line);
+                return null;
+            }
+
             return new Expense(parts[0], Double.parseDouble(parts[1]), parts[2]);
         }
 
